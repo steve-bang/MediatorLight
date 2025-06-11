@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <Authors>Steve Bang</Authors>
+    <Company>Personal</Company>
+    <Description>A lightweight mediator pattern implementation for .NET</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/steve-bang/MediatorLight</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/steve-bang/MediatorLight.git</RepositoryUrl>
+    <PackageTags>mediator;pattern;cqrs;dotnet;mediatorlight</PackageTags>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>

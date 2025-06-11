@@ -1,0 +1,170 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "MediatorLight/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MediatorLight.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MediatorLight.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MediatorLight.dll": {}
+        }
+      },
+      "MediatorLight.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/MediatorLight.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MediatorLight.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0": {
+      "sha512": "+6f2qv2a3dLwd5w6JanPIPs47CxRbnk+ZocMJUhv9NxP88VlOcJYZs9jY+MYSjxvady08bUZn6qgiNh7DadGgg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "MediatorLight/1.0.0": {
+      "type": "project",
+      "path": "../MediatorLight/MediatorLight.csproj",
+      "msbuildProject": "../MediatorLight/MediatorLight.csproj"
+    },
+    "MediatorLight.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../MediatorLight.Abstractions/MediatorLight.Abstractions.csproj",
+      "msbuildProject": "../MediatorLight.Abstractions/MediatorLight.Abstractions.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "MediatorLight >= 1.0.0",
+      "MediatorLight.Abstractions >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/mrsteve.bang/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/mrsteve.bang/Documents/_projects/MediatorLight/src/MediatorLight.DependencyInjection/MediatorLight.DependencyInjection.csproj",
+      "projectName": "MediatorLight.DependencyInjection",
+      "projectPath": "/Users/mrsteve.bang/Documents/_projects/MediatorLight/src/MediatorLight.DependencyInjection/MediatorLight.DependencyInjection.csproj",
+      "packagesPath": "/Users/mrsteve.bang/.nuget/packages/",
+      "outputPath": "/Users/mrsteve.bang/Documents/_projects/MediatorLight/src/MediatorLight.DependencyInjection/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/mrsteve.bang/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Users/mrsteve.bang/Documents/_projects/MediatorLight/src/MediatorLight.Abstractions/MediatorLight.Abstractions.csproj": {
+              "projectPath": "/Users/mrsteve.bang/Documents/_projects/MediatorLight/src/MediatorLight.Abstractions/MediatorLight.Abstractions.csproj"
+            },
+            "/Users/mrsteve.bang/Documents/_projects/MediatorLight/src/MediatorLight/MediatorLight.csproj": {
+              "projectPath": "/Users/mrsteve.bang/Documents/_projects/MediatorLight/src/MediatorLight/MediatorLight.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

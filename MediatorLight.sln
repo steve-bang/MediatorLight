@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F515880-CC4F-4162-9E72-21A456A0F393}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight", "src\MediatorLight\MediatorLight.csproj", "{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight.Abstractions", "src\MediatorLight.Abstractions\MediatorLight.Abstractions.csproj", "{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight.DependencyInjection", "src\MediatorLight.DependencyInjection\MediatorLight.DependencyInjection.csproj", "{24AD9B08-367E-4279-AF7A-7A6B351AF638}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ECA8500F-8953-43F0-B876-BF50B9B5DC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight.Tests.Unit", "tests\MediatorLight.Tests.Unit\MediatorLight.Tests.Unit.csproj", "{E4E38199-7B65-430D-9745-3B08904ED06E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AD9B08-367E-4279-AF7A-7A6B351AF638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AD9B08-367E-4279-AF7A-7A6B351AF638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AD9B08-367E-4279-AF7A-7A6B351AF638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AD9B08-367E-4279-AF7A-7A6B351AF638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E38199-7B65-430D-9745-3B08904ED06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E38199-7B65-430D-9745-3B08904ED06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E38199-7B65-430D-9745-3B08904ED06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E38199-7B65-430D-9745-3B08904ED06E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA} = {4F515880-CC4F-4162-9E72-21A456A0F393}
+		{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3} = {4F515880-CC4F-4162-9E72-21A456A0F393}
+		{24AD9B08-367E-4279-AF7A-7A6B351AF638} = {4F515880-CC4F-4162-9E72-21A456A0F393}
+		{E4E38199-7B65-430D-9745-3B08904ED06E} = {ECA8500F-8953-43F0-B876-BF50B9B5DC01}
+	EndGlobalSection
+EndGlobal
