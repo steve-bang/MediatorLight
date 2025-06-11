@@ -1,0 +1,84 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+env:
+  DOTNET_VERSION: '9.0.x'
+  NUGET_SOURCE: 'https://api.nuget.org/v3/index.json'
+  BUILD_CONFIGURATION: 'Release'
+
+jobs:
+  build-and-publish:
+    name: Build, Test and Publish to NuGet
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 9 SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Validate semantic version tag
+      run: |
+        if [[ ! "${{ github.ref_name }}" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[A-Za-z0-9-]+)?$ ]]; then
+          echo "::error::Tag '${{ github.ref_name }}' must follow semantic versioning (X.Y.Z or X.Y.Z-prerelease)"
+          exit 1
+        fi
+        echo "VERSION=${{ github.ref_name }}" >> $GITHUB_ENV
+        echo "IS_PRERELEASE=$([[ "${{ github.ref_name }}" == *-* ]] && echo 'true' || echo 'false')" >> $GITHUB_ENV
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build with version
+      run: dotnet build --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore -p:Version=${{ env.VERSION }}
+
+    - name: Run tests
+      run: dotnet test --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --verbosity normal
+
+    - name: Generate NuGet packages
+      run: |
+        dotnet pack src/MediatorLight.Abstractions \
+          --configuration ${{ env.BUILD_CONFIGURATION }} \
+          --no-build \
+          --output nupkgs \
+          -p:PackageVersion=${{ env.VERSION }} \
+          -p:Version=${{ env.VERSION }}
+
+        dotnet pack src/MediatorLight \
+          --configuration ${{ env.BUILD_CONFIGURATION }} \
+          --no-build \
+          --output nupkgs \
+          -p:PackageVersion=${{ env.VERSION }} \
+          -p:Version=${{ env.VERSION }}
+
+        dotnet pack src/MediatorLight.DependencyInjection \
+          --configuration ${{ env.BUILD_CONFIGURATION }} \
+          --no-build \
+          --output nupkgs \
+          -p:PackageVersion=${{ env.VERSION }} \
+          -p:Version=${{ env.VERSION }}
+
+    - name: Verify packages
+      run: |
+        echo "Generated packages:"
+        ls -la nupkgs/
+        if [ $(ls nupkgs/*.nupkg | wc -l) -ne 3 ]; then
+          echo "::error::Expected 3 packages, found $(ls nupkgs/*.nupkg | wc -l)"
+          exit 1
+        fi
+
+    - name: Publish to NuGet
+      if: success()
+      run: |
+        dotnet nuget push nupkgs/*.nupkg \
+          --api-key ${{ secrets.NUGET_API_KEY }} \
+          --source ${{ env.NUGET_SOURCE }} \
+          --skip-duplicate \
+          ${{ env.IS_PRERELEASE == 'true' && '--no-symbols' || '' }}

@@ -1,7 +1,6 @@
 # MediatorLight
 
 [![NuGet Version](https://img.shields.io/nuget/v/MediatorLight.svg?style=flat-square)](https://www.nuget.org/packages/MediatorLight)
-[![Build Status](https://github.com/yourusername/MediatorLight/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/MediatorLight/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A lightweight mediator pattern implementation for .NET, inspired by MediatR but with a simpler implementation and fewer dependencies.
