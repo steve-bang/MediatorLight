@@ -4,7 +4,11 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>MediatorLight.Abstractions</PackageId>
+    <PackageId>MediatorKit</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../MediatorKit.Abstractions/MediatorKit.Abstractions.csproj" />
+  </ItemGroup>
 
 </Project>

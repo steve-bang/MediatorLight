@@ -47,21 +47,21 @@ jobs:
 
     - name: Generate NuGet packages
       run: |
-        dotnet pack src/MediatorLight.Abstractions \
+        dotnet pack src/MediatorKit.Abstractions \
           --configuration ${{ env.BUILD_CONFIGURATION }} \
           --no-build \
           --output nupkgs \
           -p:PackageVersion=${{ env.VERSION }} \
           -p:Version=${{ env.VERSION }}
 
-        dotnet pack src/MediatorLight \
+        dotnet pack src/MediatorKit \
           --configuration ${{ env.BUILD_CONFIGURATION }} \
           --no-build \
           --output nupkgs \
           -p:PackageVersion=${{ env.VERSION }} \
           -p:Version=${{ env.VERSION }}
 
-        dotnet pack src/MediatorLight.DependencyInjection \
+        dotnet pack src/MediatorKit.DependencyInjection \
           --configuration ${{ env.BUILD_CONFIGURATION }} \
           --no-build \
           --output nupkgs \

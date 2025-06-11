@@ -8,7 +8,7 @@
 //   Defines the IRequestHandler interfaces for handling requests in the Mediator pattern.
 // --------------------------------------------------------------------------------------
 
-namespace MediatorLight.Abstractions;
+namespace MediatorKit.Abstractions;
 
 
 /// <summary>

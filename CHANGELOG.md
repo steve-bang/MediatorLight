@@ -17,10 +17,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-06-11
 
 ### Added
-- Initial release of MediatorLight
-- Core interfaces: `IRequest<TResponse>`, `IRequest`, `IRequestHandler<,>`, `IMediatorLight`
+- Initial release of MediatorKit
+- Core interfaces: `IRequest<TResponse>`, `IRequest`, `IRequestHandler<,>`, `IMediatorKit`
 - Implementation of `Mediator` class
-- Dependency Injection extensions with `AddMediatorLight()`
+- Dependency Injection extensions with `AddMediatorKit()`
 - Unit and integration test coverage
 - Documentation and samples
 

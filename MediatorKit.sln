@@ -5,15 +5,15 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F515880-CC4F-4162-9E72-21A456A0F393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight", "src\MediatorLight\MediatorLight.csproj", "{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorKit", "src\MediatorKit\MediatorKit.csproj", "{B11A94A4-D9A1-4A5E-AE8B-2DE5D6832EFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight.Abstractions", "src\MediatorLight.Abstractions\MediatorLight.Abstractions.csproj", "{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorKit.Abstractions", "src\MediatorKit.Abstractions\MediatorKit.Abstractions.csproj", "{35F4BD25-25B8-4FCC-ABCB-6E83AD3F9FC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight.DependencyInjection", "src\MediatorLight.DependencyInjection\MediatorLight.DependencyInjection.csproj", "{24AD9B08-367E-4279-AF7A-7A6B351AF638}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorKit.DependencyInjection", "src\MediatorKit.DependencyInjection\MediatorKit.DependencyInjection.csproj", "{24AD9B08-367E-4279-AF7A-7A6B351AF638}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ECA8500F-8953-43F0-B876-BF50B9B5DC01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLight.Tests.Unit", "tests\MediatorLight.Tests.Unit\MediatorLight.Tests.Unit.csproj", "{E4E38199-7B65-430D-9745-3B08904ED06E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorKit.Tests.Unit", "tests\MediatorKit.Tests.Unit\MediatorKit.Tests.Unit.csproj", "{E4E38199-7B65-430D-9745-3B08904ED06E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

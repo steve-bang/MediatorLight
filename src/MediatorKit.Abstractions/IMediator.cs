@@ -12,7 +12,7 @@
 /// <summary>
 /// Defines the contract for a mediator that sends requests to their corresponding handlers.
 /// </summary>
-namespace MediatorLight.Abstractions;
+namespace MediatorKit.Abstractions;
 
 public interface IMediator
 {

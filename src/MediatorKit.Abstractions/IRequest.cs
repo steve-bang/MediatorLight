@@ -8,7 +8,7 @@
 //   Defines the IRequest and Unit abstractions for the Mediator pattern.
 // --------------------------------------------------------------------------------------
 
-namespace MediatorLight.Abstractions;
+namespace MediatorKit.Abstractions;
 
 /// <summary>
 /// Represents a request with a response type for the Mediator pattern.

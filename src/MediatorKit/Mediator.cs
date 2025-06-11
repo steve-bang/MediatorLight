@@ -9,10 +9,10 @@
 //   to their corresponding handlers using dependency injection.
 // --------------------------------------------------------------------------------------
 
-using MediatorLight.Abstractions;
+using MediatorKit.Abstractions;
 using System.Collections.Concurrent;
 
-namespace MediatorLight;
+namespace MediatorKit;
 
 /// <summary>
 /// Mediator implementation for handling requests and dispatching them to their corresponding handlers.

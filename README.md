@@ -1,6 +1,6 @@
-# MediatorLight
+# MediatorKit
 
-[![NuGet Version](https://img.shields.io/nuget/v/MediatorLight.svg?style=flat-square)](https://www.nuget.org/packages/MediatorLight)
+[![NuGet Version](https://img.shields.io/nuget/v/MediatorKit.svg?style=flat-square)](https://www.nuget.org/packages/MediatorKit)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A lightweight mediator pattern implementation for .NET, inspired by MediatR but with a simpler implementation and fewer dependencies.
@@ -15,12 +15,12 @@ A lightweight mediator pattern implementation for .NET, inspired by MediatR but 
 
 ## Installation
 ```bash
-dotnet add package MediatorLight
+dotnet add package MediatorKit
 ```
 
 For DI integration:
 ```bash
-dotnet add package MediatorLight.DependencyInjection
+dotnet add package MediatorKit.DependencyInjection
 ```
 
 ## Quick Start
@@ -39,7 +39,7 @@ public class GetUserQueryHandler : IRequestHandler<GetUserQuery, User>
 }
 
 // Register services
-services.AddMediatorLight(options => 
+services.AddMediatorKit(options => 
 {
     options.AddHandler<GetUserQueryHandler>();
 });

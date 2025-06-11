@@ -5,9 +5,9 @@
     <Company>Personal</Company>
     <Description>A lightweight mediator pattern implementation for .NET</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/steve-bang/MediatorLight</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/steve-bang/MediatorLight.git</RepositoryUrl>
-    <PackageTags>mediator;pattern;cqrs;dotnet;mediatorlight</PackageTags>
+    <PackageProjectUrl>https://github.com/steve-bang/MediatorKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/steve-bang/MediatorKit.git</RepositoryUrl>
+    <PackageTags>mediator;pattern;cqrs;dotnet;MediatorKit</PackageTags>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>

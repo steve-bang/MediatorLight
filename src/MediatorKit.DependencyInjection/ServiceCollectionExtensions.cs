@@ -5,19 +5,19 @@
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 //
 // Description:
-//   Provides extension methods for registering MediatorLight services and handlers
+//   Provides extension methods for registering MediatorKit services and handlers
 //   with the Microsoft dependency injection container.
 // --------------------------------------------------------------------------------------
 
 
-using MediatorLight.Abstractions;
+using MediatorKit.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace MediatorLight;
+namespace MediatorKit;
 
 /// <summary>
-/// Extension methods for registering MediatorLight services with the dependency injection container.
+/// Extension methods for registering MediatorKit services with the dependency injection container.
 /// </summary>
 public static class ServiceCollectionExtensions
 {
@@ -27,7 +27,7 @@ public static class ServiceCollectionExtensions
     /// <param name="services">The service collection to add the Mediator to.</param>
     /// <param name="lifetime">The service lifetime for the Mediator.</param>
     /// <returns>The updated service collection.</returns>
-    public static IServiceCollection AddMediatorLight(this IServiceCollection services, ServiceLifetime lifetime = ServiceLifetime.Transient)
+    public static IServiceCollection AddMediatorKit(this IServiceCollection services, ServiceLifetime lifetime = ServiceLifetime.Transient)
     {
         services.TryAdd(new ServiceDescriptor(typeof(IMediator), typeof(Mediator), lifetime));
         return services;
@@ -40,9 +40,9 @@ public static class ServiceCollectionExtensions
     /// <param name="configure">An action to configure Mediator options.</param>
     /// <param name="lifetime">The service lifetime for the Mediator.</param>
     /// <returns>The updated service collection.</returns>
-    public static IServiceCollection AddMediatorLight(this IServiceCollection services, Action<MediatorOptions> configure, ServiceLifetime lifetime = ServiceLifetime.Transient)
+    public static IServiceCollection AddMediatorKit(this IServiceCollection services, Action<MediatorOptions> configure, ServiceLifetime lifetime = ServiceLifetime.Transient)
     {
-        services.AddMediatorLight(lifetime);
+        services.AddMediatorKit(lifetime);
         configure(new MediatorOptions(services, lifetime));
         return services;
     }

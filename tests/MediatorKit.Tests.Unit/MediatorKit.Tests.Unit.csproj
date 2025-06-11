@@ -20,8 +20,8 @@
   </ItemGroup>
 
     <ItemGroup>
-    <ProjectReference Include="..\..\src\MediatorLight.Abstractions\MediatorLight.Abstractions.csproj" />
-    <ProjectReference Include="..\..\src\MediatorLight\MediatorLight.csproj" />
+    <ProjectReference Include="..\..\src\MediatorKit.Abstractions\MediatorKit.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\MediatorKit\MediatorKit.csproj" />
   </ItemGroup>
 
 </Project>

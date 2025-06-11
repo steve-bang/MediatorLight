@@ -1,8 +1,8 @@
 
-using MediatorLight.Abstractions;
+using MediatorKit.Abstractions;
 using Moq;
 
-namespace MediatorLight.Tests
+namespace MediatorKit.Tests
 {
     public class MediatorTests
     {
@@ -43,6 +43,6 @@ namespace MediatorLight.Tests
 
         public record TestRequest : IRequest<TestResponse>;
         public record TestResponse;
-        public record TestVoidRequest : IRequest<MediatorLight.Abstractions.Unit>;
+        public record TestVoidRequest : IRequest<MediatorKit.Abstractions.Unit>;
     }
 }
