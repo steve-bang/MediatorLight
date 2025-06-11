@@ -77,6 +77,12 @@ jobs:
           exit 1
         fi
 
+        if [ -z "${{ secrets.NUGET_API_KEY }}" ]; then
+        echo "NUGET_API_KEY is empty!"
+        else
+        echo "NUGET_API_KEY is set (but value is masked in logs)."
+        fi
+
     - name: Publish to NuGet
       if: success()
       run: |
